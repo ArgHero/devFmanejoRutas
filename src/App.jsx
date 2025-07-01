@@ -7,25 +7,26 @@ import NavBar from './components/navBar/NavBar'
 import PerfilUsuario from './pages/perfilUsuario/PerfilUsuario'
 import ProtectedRoute from './components/rutaProtegida/ProtectedRoute'
 import Login from './pages/login/Login'
+import { useEffect, useState } from 'react'
 
 function App() {
+  const [isAuth, setIsAuth] = useState(false);
 
-
-
+  useEffect(()=>{console.log(isAuth)},[isAuth])
 
   return (
-    <>
+    <main style={{display:'flex', flexDirection: 'column'}}>
       <NavBar />
       <Routes >
         <Route path='/' element={<Home />}/>
-        <Route path='/about' element={<About />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/user/:id' element={<ProtectedRoute isAuth={true} children={<PerfilUsuario />} />}/>
+        <Route path='/citas' element={<About />} />
+        <Route path='/login' element={<Login isAuth={isAuth} setIsAuth = {setIsAuth}/>} />
+        <Route path='/cita/:id' element={<ProtectedRoute isAuth={isAuth} children={<PerfilUsuario />} />}/>
         <Route path='*' element={<NotFound />}/>
 
       </Routes>
     
-    </>
+    </ main>
   )
 }
 
