@@ -1,0 +1,50 @@
+.detalle-cita {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+}
+
+.detalle-cita h2 {
+  margin-bottom: 1rem;
+  color: #0077b6;
+  text-align: center;
+}
+
+.detalle-cita ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detalle-cita li {
+  margin-bottom: 0.6rem;
+  color: #333;
+}
+
+.detalle-cita strong {
+  color: #555;
+}
+
+.btn-regresar {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #0b0d0e;
+  margin: 1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-regresar:hover {
+  background-color: #262d31;
+}

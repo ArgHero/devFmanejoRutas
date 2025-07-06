@@ -24,3 +24,7 @@ Crea un nuevo repositorio en tu equipo local para solucionar el problema plantea
 Crea uno o más 'commits' en tu repositorio con los archivos utilizados en la solución.
 Si quieres agrega otro(s) archivo(s) que tengas con ejemplos de la clase o con algún ejemplo que tú hayas intentado mucho mejor.
 Comparte la liga de Github de tu repositorio con la solución.
+
+## IMPORTANTE
+USUARIO: cuenta@prueba.com
+CONTRASEÑA: Pa$$word1

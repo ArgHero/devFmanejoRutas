@@ -29,7 +29,7 @@ function Login(props){
             <input type="password" ref={txtPasswordRef} name="txtPassword" id="txtPassword" placeholder="contraseña" required/>
             <button type="submit">Enviar</button>
         </form>
-        {isAuth && <Navigate to={`/cita/${txtUserRef.current.value.trim()}`} />}
+        {isAuth && <Navigate to="/citas" />}
     
     </>)
 }

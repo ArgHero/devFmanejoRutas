@@ -1,13 +1,18 @@
 import "./NavBar.css"
 import { Link } from "react-router-dom";
 
-function NavBar(params){
+function NavBar(props){
+    const {isAuth,setIsAuth} = props;
+    const cerrarSesionHandler = (event) =>{
+        event.preventDefault();
+        setIsAuth(false);
+    }
 
-    return(<nav style={{display: "flex", justifyContent: "space-between", width: "80vw", height:"3rem"}}>
-        <Link to="/">Pagina de inicio.</Link>
-        <Link to="/citas">Lista de citas médicas.</Link>
+    return(<nav className="navegacion">
+        <Link to="/">Pagina de inicio</Link>
+        <Link to="/citas">Lista de citas médicas</Link>
         {/* <Link to="/asdas">Error</Link> */}
-        <Link to="/login">Login</Link>
+        {isAuth?<a  onClick={cerrarSesionHandler}>Cerrar sesión</a> : <Link to="/login">Iniciar Sesión</Link>}
 
     </nav>)
 }
